@@ -17,9 +17,7 @@ public class Luhnsalg1 { public static void main(String [] args) {
 	int Ddigit = 0; //double the digit.
 	int together = 0; //adds numbers together.
     
-    boolean EvenL = true;
-				
-				
+    	boolean EvenL = true;			
 		if (line.length()%2==0) //determines if the code is of even length 
 	{
 		EvenL = true; 
@@ -31,8 +29,7 @@ public class Luhnsalg1 { public static void main(String [] args) {
 		EvenL = false;	
 		//System.out.println(line.length());	
 	}
-	
-				//this result then goes into this for loop accordingly
+			//this result then goes into this for loop accordingly
 			for (int i = line.length() - 1 ; i >= 0 ; i--)
 		{ 
 			int digit = Character.getNumericValue(line.charAt(i)); //converts string into and integer.		
@@ -46,14 +43,12 @@ public class Luhnsalg1 { public static void main(String [] args) {
 					sumGreat = sumGreat + Ddigit% 10; //adds all none 
 					Ddigit = Ddigit/10 ;
 				} 		
-			}	
-				
+			}		
 				//double even numbers less than 9.
 				else if (EvenL && Ddigit <= 9 )
 			{	
 					sumEless = sumEless + Ddigit ;
 			}
-				
 				//add the odd numbers
 				else
 			{	
@@ -70,6 +65,5 @@ public class Luhnsalg1 { public static void main(String [] args) {
 			{
 				System.out.println ("INVALID");
 			}
-
-}
+	}
 }
