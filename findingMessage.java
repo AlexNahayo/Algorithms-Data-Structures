@@ -1,5 +1,22 @@
 
-    
+// Question:
+//Alice’s public key is (24852977, 2744, 8414508). You eavesdrop on the line and
+// observe Bob send her the cipher (15268076, 743675). Extract the message by any
+// means.
+// Warning: for the programming part, make sure to use longs rather than ints (you
+// may need to put an ‘l’ at the end of the number). Also, make sure to keep 
+// modulo-ing every time the number in the calculation gets a little too big – never
+// do large power multiplications straight off because Java cannot process large
+// numbers like this.
+// As a result, it might be worthwhile to use these recursive methods for modulo
+// multiplication and modulo raising to a power. These work efficiently and ensure
+// that the numbers never get too big. 
+/**
+ * 
+ * @author (Alex Nahayo) 
+ * @version (02-04-2019)
+ */
+ 
 import java.util.Scanner;
 public class findingMessage {
 	public static void main(String args[]){
